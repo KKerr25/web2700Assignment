@@ -4,20 +4,84 @@
     <meta charset="utf-8" />
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/Contact.css" />
   </head>
   <body>
     <header class="header-title">
-      <a href="index.html"><h1>Konrad's Accessible Site</h1></a>
+      <a href="index.html">
+        <h1>Konrad's Accessible Site</h1>
+      </a>
     </header>
 
     <nav class="main-nav" aria-label="Main Navigation">
       <div>
+        <a href="index.html"><span>Home</span></a>
         <a href="PlainLanguage.html"><span>Plain Language</span></a>
         <a href="Design.html"><span>Design</span></a>
         <a href="AboutMe.html"><span>About Me</span></a>
-        <a href="Contact.html"><span>Contact</span></a>
+        <a href="Contact.html"><span class="current-nav">Contact</span></a>
       </div>
     </nav>
+
+    <main class="content">
+      <section>
+        <h1>Contact Me</h1>
+        <p>
+          Thank you for reaching out! We typically respond within 48 hours. Please fill out the form below with accurate
+          information, ensuring all required fields are completed.
+        </p>
+      </section>
+
+      <section>
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name (required):</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email (required):</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Message</legend>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Questions</legend>
+
+            <label for="Services" id="Services" aria-label="Services Interested In?" tabindex="0"
+              >Services Interested In:</label
+            >
+            <input type="checkbox" id="webDesign" name="services" value="web-design" />
+            <label for="webDesign">Web Design</label>
+
+            <input type="checkbox" id="seo" name="services" value="seo" />
+            <label for="seo">SEO</label>
+
+            <input type="checkbox" id="consulting" name="services" value="consulting" />
+            <label for="consulting">Consulting</label>
+            <br />
+            <br />
+            <label for="How" aria-label="How did you hear about us?" tabindex="0">How did you hear about us?</label>
+            <input type="radio" id="internet" name="source" value="internet" />
+            <label for="internet">Internet</label>
+
+            <input type="radio" id="friend" name="source" value="friend" />
+            <label for="friend">Friend</label>
+
+            <input type="radio" id="other" name="source" value="other" />
+            <label for="other">Other</label>
+          </fieldset>
+
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

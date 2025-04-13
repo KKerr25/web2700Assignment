@@ -52,6 +52,12 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.current-page {
+  background-color: #0255a8;
+  border-radius: 5px;
+}
+
 .content {
   max-width: 800px;
   padding: 1rem;
