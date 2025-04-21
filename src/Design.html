@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/Design.css" />
   </head>
   <body>
     <header class="header-title">
@@ -20,5 +20,182 @@
         <a href="Contact.html"><span>Contact</span></a>
       </div>
     </nav>
+
+    <main>
+      <section aria-labelledby="introduction-heading">
+        <h2 id="introduction-heading">Introduction</h2>
+        <p>
+          Good visual design and structure are critical in web development because they create a user-friendly
+          experience that is accessible to all. Proper design ensures that content is readable, visually appealing, and
+          navigable for users with varying needs, including those relying on assistive technologies. Strong semantic
+          structure improves usability, search engine optimization (SEO), and helps developers maintain and extend code
+          easily.
+        </p>
+      </section>
+
+      <section aria-labelledby="visual-design-heading">
+        <h3 id="visual-design-heading">Visual Design</h3>
+
+        <section aria-labelledby="color-heading">
+          <h4 id="color-heading">Color</h4>
+          <ul>
+            <li>
+              <p>
+                <strong>Primary Color:</strong> The primary color I chose is blue because it conveys trust,
+                professionalism, and calmness.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Secondary Color:</strong> The secondary color is white, chosen for its clean and neutral
+                qualities.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Tertiary Color:</strong> The tertiary color is a darker blue, selected for its complementary
+                qualities with the primary blue while adding depth and contrast.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Selection Process:</strong> To choose these colors, I considered color psychology and tested
+                combinations for aesthetic appeal and accessibility using tools like Adobe Color and contrast checkers.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Application of Colors:</strong> Blue is used for buttons and headings, providing a strong and
+                professional emphasis. White is applied as the background to ensure a clean, uncluttered interface that
+                makes other elements stand out. The darker blue is used for secondary accents, such as borders, hover
+                states, or text, to emphasize important content and maintain a cohesive design.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Contrast Ratios:</strong> The contrast between the darker blue elements and the white background
+                exceeds the WCAG 2.1 AA contrast ratio requirement of 4.5:1 for text and 3:1 for larger elements,
+                ensuring accessibility for users with visual impairments.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="typography-heading">
+          <h4 id="typography-heading">Typography</h4>
+          <ul>
+            <li>
+              <p>
+                <strong>Body Font:</strong> The body font chosen is "Open Sans," a sans-serif font known for its
+                legibility across devices and sizes.
+              </p>
+            </li>
+            <li>
+              <p><strong>Header Font:</strong> For headers, I opted for "Roboto Bold."</p>
+            </li>
+            <li>
+              <p>
+                <strong>Sizing, Weight, and Colors:</strong> Font sizes are 16px for body text and larger sizes for
+                headings to establish a clear hierarchy. Weights range from regular for paragraphs to bold for emphasis,
+                ensuring readability. Fonts are dark grey against a white background, ensuring high contrast.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section aria-labelledby="layout-heading">
+        <h3 id="layout-heading">Layout/Navigation</h3>
+
+        <section aria-labelledby="visual-layout-heading">
+          <h4 id="visual-layout-heading">Visual Layout</h4>
+          <p>
+            The layout follows a traditional hierarchy, with navigation at the top, followed by a clear header, main
+            content, and footer. Elements are arranged logically to match reading order, starting from left to right and
+            top to bottom. This structure ensures that users can quickly locate what they're looking for without
+            confusion.
+          </p>
+        </section>
+
+        <section aria-labelledby="navigation-heading">
+          <h4 id="navigation-heading">Navigation</h4>
+          <p>
+            Navigation includes clear hover states, focus states, and active states to ensure users—especially those
+            relying on keyboard navigation—can easily track where they are. Visual indicators such as underlining or
+            color changes are used to provide accessibility and intuitive interaction.
+          </p>
+        </section>
+      </section>
+
+      <section aria-labelledby="content-heading">
+        <h3 id="content-heading">Content</h3>
+
+        <section aria-labelledby="content-structuring-heading">
+          <h4 id="content-structuring-heading">Content Structuring</h4>
+          <p>
+            The content is structured with semantic HTML elements like header, main, section, aside, and footer to
+            ensure clarity and alignment with accessibility standards.
+          </p>
+        </section>
+
+        <section aria-labelledby="responsiveness-heading">
+          <h4 id="responsiveness-heading">Responsiveness</h4>
+          <p>
+            The site is fully responsive and supports resizing without compromising readability. Text zoom up to 200% is
+            supported without breaking the layout or hiding important information.
+          </p>
+        </section>
+
+        <section aria-labelledby="bootstrap-heading">
+          <h4 id="bootstrap-heading">Bootstrap</h4>
+          <p>
+            Bootstrap was used to quickly prototype and implement responsive grid systems, ensuring consistent spacing
+            and alignment across devices.
+          </p>
+        </section>
+      </section>
+
+      <section aria-labelledby="structural-design-heading">
+        <h3 id="structural-design-heading">Structural Design</h3>
+
+        <section aria-labelledby="accessibility-features-heading">
+          <h4 id="accessibility-features-heading">Accessibility Features</h4>
+          <ul>
+            <li>
+              <strong>ARIA:</strong> ARIA roles and labels are used to provide context for screen readers, such as
+              aria-labelledby on sections within main.
+            </li>
+            <li>
+              <strong>Semantic Elements:</strong> Proper semantic tags are used for navigation (nav), headers (header),
+              and content (main), ensuring logical structure.
+            </li>
+            <li>
+              <strong>Descriptive Link Text:</strong> All links are descriptive, avoiding generic text like "Click
+              here."
+            </li>
+            <li>
+              <strong>Focus Styles:</strong> Clearly visible focus styles are provided for keyboard users, such as
+              outlines or color changes.
+            </li>
+            <li>
+              <strong>Skip Navigation Link:</strong> A skip link is included to let users jump directly to the main
+              content.
+            </li>
+            <li>
+              <strong>Responsive Design:</strong> Media queries and flexible layouts ensure accessibility across various
+              screen sizes.
+            </li>
+            <li>
+              <strong>Alt-Text:</strong> Alt-text descriptions are used for all images to convey their content or
+              purpose.
+            </li>
+            <li>
+              <strong>Testing:</strong> The site was tested with accessibility tools like Lighthouse, Axe, and screen
+              readers to ensure compliance and a good user experience.
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
   </body>
 </html>

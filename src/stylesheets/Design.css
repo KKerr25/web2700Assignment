@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  width: 100%;
+  background-color: #044fc0;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-title a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-title a:hover {
+  text-decoration: none;
+}
+
+/* Navigation Styles */
+.main-nav {
+  width: 100%;
+  background-color: #012964;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.current-page {
+  background-color: #003d99;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.main-nav span {
+  padding: 1rem 2rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav span:hover {
+  background-color: #0066cc;
+  border-radius: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Content Container */
+main {
+  max-width: 1000px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2,
+section h3,
+section h4 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #044fc0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #012964;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #003d99;
+}
+
+/* Typography */
+p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+/* Link Styles */
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  width: 100%;
+  background-color: #012964;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
