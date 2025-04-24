@@ -201,3 +201,19 @@ button[type="reset"] {
 button:hover {
   opacity: 0.9;
 }
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.option-row label {
+  flex: 1;
+}
+
+.option-row input[type="checkbox"],
+.option-row input[type="radio"] {
+  margin-left: 1rem;
+}

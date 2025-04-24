@@ -126,15 +126,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-.site-footer {
-  width: 100%;
-  background-color: #012964;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-nav {
@@ -146,4 +137,16 @@ a:hover {
     padding: 1rem;
     margin: 1rem;
   }
+}
+
+.site-footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #012964;
+  padding: 1rem;
+  text-align: center;
+}
+
+#footer-title {
+  color: #fff;
 }

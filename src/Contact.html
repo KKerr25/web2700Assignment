@@ -52,28 +52,39 @@
           <fieldset>
             <legend>Additional Questions</legend>
 
-            <label for="Services" id="Services" aria-label="Services Interested In?" tabindex="0"
-              >Services Interested In:</label
-            >
-            <input type="checkbox" id="webDesign" name="services" value="web-design" />
-            <label for="webDesign">Web Design</label>
+            <!-- Services Interested In -->
+            <label id="services-question">Services Interested In:</label>
+            <div class="option-row">
+              <label for="webDesign">Web Design</label>
+              <input type="checkbox" id="webDesign" name="services" value="web-design" />
+            </div>
 
-            <input type="checkbox" id="seo" name="services" value="seo" />
-            <label for="seo">SEO</label>
+            <div class="option-row">
+              <label for="seo">SEO</label>
+              <input type="checkbox" id="seo" name="services" value="seo" />
+            </div>
 
-            <input type="checkbox" id="consulting" name="services" value="consulting" />
-            <label for="consulting">Consulting</label>
-            <br />
-            <br />
-            <label for="How" aria-label="How did you hear about us?" tabindex="0">How did you hear about us?</label>
-            <input type="radio" id="internet" name="source" value="internet" />
-            <label for="internet">Internet</label>
+            <div class="option-row">
+              <label for="consulting">Consulting</label>
+              <input type="checkbox" id="consulting" name="services" value="consulting" />
+            </div>
 
-            <input type="radio" id="friend" name="source" value="friend" />
-            <label for="friend">Friend</label>
+            <!-- How Did You Hear About Us -->
+            <label id="source-question">How did you hear about us?</label>
+            <div class="option-row">
+              <label for="internet">Internet</label>
+              <input type="radio" id="internet" name="source" value="internet" />
+            </div>
 
-            <input type="radio" id="other" name="source" value="other" />
-            <label for="other">Other</label>
+            <div class="option-row">
+              <label for="friend">Friend</label>
+              <input type="radio" id="friend" name="source" value="friend" />
+            </div>
+
+            <div class="option-row">
+              <label for="other">Other</label>
+              <input type="radio" id="other" name="source" value="other" />
+            </div>
           </fieldset>
 
           <div>
@@ -83,5 +94,8 @@
         </form>
       </section>
     </main>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <p id="footer-title">&copy; All Rights Reserved - 2025 Kerr</p>
+    </footer>
   </body>
 </html>
